@@ -90,6 +90,15 @@ async function main() {
       github: `https://github.com/${GITHUB_USER}`,
       linkedin: 'https://www.linkedin.com/in/maximilian-grohmann-b70588b1',
       orcid: `https://orcid.org/${ORCID}`,
+      expertise: [
+        'ARIA database SQL queries and reporting',
+        'Digitalization and interface design between departmental, clinical and hospital systems',
+        'HL7, FHIR and web-service integrations',
+        'RayStation TPS scripting',
+        'ESAPI / Eclipse automation',
+        'Clinical networking, port releases, routing and protocol troubleshooting',
+        'DICOM, DICOM-RT, SMB and related clinical communication workflows',
+      ],
     },
     metrics: {
       publicRepositories: reposRaw.filter((repo) => !repo.fork).length,

@@ -1,12 +1,21 @@
 {
-  "generatedAt": "2026-06-04T05:43:27.280Z",
+  "generatedAt": "2026-06-04T07:09:24.509Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
     "location": "Leipzig, Germany",
     "github": "https://github.com/Kiragroh",
     "linkedin": "https://www.linkedin.com/in/maximilian-grohmann-b70588b1",
-    "orcid": "https://orcid.org/0000-0002-6909-811X"
+    "orcid": "https://orcid.org/0000-0002-6909-811X",
+    "expertise": [
+      "ARIA database SQL queries and reporting",
+      "Digitalization and interface design between departmental, clinical and hospital systems",
+      "HL7, FHIR and web-service integrations",
+      "RayStation TPS scripting",
+      "ESAPI / Eclipse automation",
+      "Clinical networking, port releases, routing and protocol troubleshooting",
+      "DICOM, DICOM-RT, SMB and related clinical communication workflows"
+    ]
   },
   "metrics": {
     "publicRepositories": 30,
@@ -21,7 +30,7 @@
       "language": "C#",
       "stars": 9,
       "forks": 1,
-      "updated": "2021-12-13T20:51:57Z",
+      "updated": "2026-06-04T06:35:24Z",
       "topics": []
     },
     {
