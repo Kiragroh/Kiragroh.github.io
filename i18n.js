@@ -73,8 +73,14 @@
     nodes.forEach((node) => {
       const key = normalize(node.nodeValue);
       if (dict[key]) node.nodeValue = node.nodeValue.replace(key, dict[key]);
-      if (document.documentElement.lang === 'de') node.nodeValue = node.nodeValue.replace('updated ', 'aktualisiert ');
-      if (document.documentElement.lang !== 'de') node.nodeValue = node.nodeValue.replace('aktualisiert ', 'updated ');
+      if (document.documentElement.lang === 'de') {
+        node.nodeValue = node.nodeValue.replace('updated ', 'aktualisiert ');
+        [['Jan ', 'Jan. '], ['Feb ', 'Feb. '], ['Mar ', 'März '], ['Apr ', 'Apr. '], ['May ', 'Mai '], ['Jun ', 'Juni '], ['Jul ', 'Juli '], ['Oct ', 'Okt. '], ['Dec ', 'Dez. ']].forEach(([en, de]) => { node.nodeValue = node.nodeValue.replaceAll(en, de); });
+      }
+      if (document.documentElement.lang !== 'de') {
+        node.nodeValue = node.nodeValue.replace('aktualisiert ', 'updated ');
+        [['Jan. ', 'Jan '], ['Feb. ', 'Feb '], ['März ', 'Mar '], ['Apr. ', 'Apr '], ['Mai ', 'May '], ['Juni ', 'Jun '], ['Juli ', 'Jul '], ['Okt. ', 'Oct '], ['Dez. ', 'Dec ']].forEach(([de, en]) => { node.nodeValue = node.nodeValue.replaceAll(de, en); });
+      }
     });
   }
 
