@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-06-04T05:34:58.112Z",
+  "profile": {
+    "name": "Maximilian Grohmann",
+    "role": "Medical Informatics Specialist",
+    "location": "Leipzig, Germany",
+    "github": "https://github.com/Kiragroh",
+    "linkedin": "https://www.linkedin.com/in/maximilian-grohmann-b70588b1",
+    "orcid": "https://orcid.org/0000-0002-6909-811X"
+  },
+  "metrics": {
+    "publicRepositories": 30,
+    "selectedRepositories": 9,
+    "orcidWorks": 27
+  },
+  "repositories": [
+    {
+      "name": "ESAPI_Showcase_ComplexScripts",
+      "url": "https://github.com/Kiragroh/ESAPI_Showcase_ComplexScripts",
+      "description": "Screenshots of my often used complex ESAPI-GUI-Scripts. These screenshots should inspire you for your own projects.",
+      "language": "C#",
+      "stars": 9,
+      "forks": 1,
+      "updated": "2021-12-13T20:51:57Z",
+      "topics": []
+    },
+    {
+      "name": "Python_DICOM-RT-MetricExtractor",
+      "url": "https://github.com/Kiragroh/Python_DICOM-RT-MetricExtractor",
+      "description": "Process DICOM-RT files with a simple GUI to get specified metrics and a nice DVH plot",
+      "language": "Python",
+      "stars": 7,
+      "forks": 3,
+      "updated": "2021-01-31T22:04:32Z",
+      "topics": []
+    },
+    {
+      "name": "DICOM-RT-Station",
+      "url": "https://github.com/Kiragroh/DICOM-RT-Station",
+      "description": "A comprehensive DICOM RT (Radiation Therapy) plan management application with graphical user interface. This software enables receiving, organizing, and selectively forwarding DICOM RT plans to various DICOM nodes with automated rule-based forwarding capabilities.",
+      "language": "Python",
+      "stars": 7,
+      "forks": 2,
+      "updated": "2026-03-09T06:18:57Z",
+      "topics": []
+    },
+    {
+      "name": "Kira_DICOM-RT-Anonymizer-MG",
+      "url": "https://github.com/Kiragroh/Kira_DICOM-RT-Anonymizer-MG",
+      "description": "Anonymize DICOM-RT files with ease. UIDs are also anonymized but without losing RT connections.",
+      "language": "Code",
+      "stars": 8,
+      "forks": 0,
+      "updated": "2022-04-09T07:39:33Z",
+      "topics": []
+    },
+    {
+      "name": "ESAPI_Beam-Namer",
+      "url": "https://github.com/Kiragroh/ESAPI_Beam-Namer",
+      "description": "BinaryPlugin_Simply change your Beam/Field IDs with the nomenclature of your choice.",
+      "language": "C#",
+      "stars": 7,
+      "forks": 1,
+      "updated": "2021-12-13T20:49:18Z",
+      "topics": []
+    },
+    {
+      "name": "Akki_Custom-Varian-Importer",
+      "url": "https://github.com/Kiragroh/Akki_Custom-Varian-Importer",
+      "description": "Import Dicom files from many patients at once without even opening Eclipse.",
+      "language": "C#",
+      "stars": 7,
+      "forks": 0,
+      "updated": "2022-02-07T09:04:37Z",
+      "topics": []
+    },
+    {
+      "name": "ESAPI_DataMiner_PortalDosimetry",
+      "url": "https://github.com/Kiragroh/ESAPI_DataMiner_PortalDosimetry",
+      "description": "Standalone-Console-App_Mine all analysed PortalDosimetry Fields and make custom evaluations too",
+      "language": "C#",
+      "stars": 6,
+      "forks": 1,
+      "updated": "2020-08-01T10:47:32Z",
+      "topics": []
+    },
+    {
+      "name": "Split-MultiFrame-DICOM",
+      "url": "https://github.com/Kiragroh/Split-MultiFrame-DICOM",
+      "description": "Split Enhanced Multi-Frame DICOM files into single-frame DICOMs. Simple Python script for Varian Eclipse TPS (≤v18) users. No Java/dcm4che required.",
+      "language": "Python",
+      "stars": 5,
+      "forks": 1,
+      "updated": "2026-04-14T20:13:32Z",
+      "topics": []
+    },
+    {
+      "name": "ESAPI_SRS-MultiMets-localMetrics",
+      "url": "https://github.com/Kiragroh/ESAPI_SRS-MultiMets-localMetrics",
+      "description": "Simplified version of a ESAPI script to calculate local plan quality metrics for SRS cases with multiple lesions",
+      "language": "C#",
+      "stars": 5,
+      "forks": 1,
+      "updated": "2022-10-12T11:54:19Z",
+      "topics": []
+    }
+  ],
+  "publications": [
+    {
+      "title": "Balancing barriers: Family, career, and gender equality in radiation oncology and radiation research—An interdisciplinary prospective survey among the young workforce",
+      "year": "2026",
+      "doi": "10.1007/s00066-025-02402-2",
+      "url": "https://doi.org/10.1007/s00066-025-02402-2",
+      "journal": "Strahlentherapie und Onkologie",
+      "type": "journal-article"
+    },
+    {
+      "title": "Tumor control probability modeling of pulmonary metastases in oligometastatic head and neck squamous cell carcinoma treated with stereotactic body radiation therapy",
+      "year": "2026",
+      "doi": "10.1016/j.radonc.2026.111375",
+      "url": "https://doi.org/10.1016/j.radonc.2026.111375",
+      "journal": "Radiotherapy and Oncology",
+      "type": "journal-article"
+    },
+    {
+      "title": "An efficient automated approach for accumulated dose estimation in prostate cancer radiotherapy",
+      "year": "2026",
+      "doi": "https://doi.org/10.1016/j.phro.2026.100942",
+      "url": "https://doi.org/https://doi.org/10.1016/j.phro.2026.100942",
+      "journal": "Physics and Imaging in Radiation Oncology",
+      "type": "journal-article"
+    },
+    {
+      "title": "Current practices in peer review in German radiation oncology: a nationwide survey",
+      "year": "2025",
+      "doi": "10.1007/s00066-025-02444-6",
+      "url": "https://doi.org/10.1007/s00066-025-02444-6",
+      "journal": "Strahlentherapie und Onkologie",
+      "type": "journal-article"
+    },
+    {
+      "title": "Multicenter multiplatform pattern-of-practice analysis of single-isocenter multitarget stereotactic radiosurgery",
+      "year": "2025",
+      "doi": "10.1007/s00066-025-02424-w",
+      "url": "https://doi.org/10.1007/s00066-025-02424-w",
+      "journal": "Strahlentherapie und Onkologie",
+      "type": "journal-article"
+    },
+    {
+      "title": "Implementing total skin electron irradiation in radiotherapy: a structured change management approach",
+      "year": "2025",
+      "doi": "10.1007/s00066-025-02408-w",
+      "url": "https://doi.org/10.1007/s00066-025-02408-w",
+      "journal": "Strahlentherapie und Onkologie",
+      "type": "journal-article"
+    },
+    {
+      "title": "Contouring in transition: perceptions of AI-based autocontouring by radiation oncologists and medical physicists in German-speaking countries",
+      "year": "2025",
+      "doi": "10.1007/s00066-025-02403-1",
+      "url": "https://doi.org/10.1007/s00066-025-02403-1",
+      "journal": "Strahlentherapie und Onkologie",
+      "type": "journal-article"
+    },
+    {
+      "title": "Pulmonary Stereotactic Body Radiotherapy of Oligometastatic Head-and-Neck Squamous Cell Carcinoma - A multicenter retrospective study",
+      "year": "2025",
+      "doi": "10.1016/j.ijrobp.2024.12.015",
+      "url": "https://doi.org/10.1016/j.ijrobp.2024.12.015",
+      "journal": "International Journal of Radiation Oncology*Biology*Physics",
+      "type": "journal-article"
+    }
+  ]
+}
