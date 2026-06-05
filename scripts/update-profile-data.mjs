@@ -5,6 +5,16 @@ const GITHUB_USER = 'Kiragroh';
 const ORCID = '0000-0002-6909-811X';
 const root = new URL('..', import.meta.url);
 const outFile = new URL('data/profile.json', root);
+const manualPublications = [
+  {
+    title: 'A multimodal and temporal foundation model for virtual patient representations at healthcare system scale',
+    year: '2026',
+    doi: '10.48550/arXiv.2604.18570',
+    url: 'https://doi.org/10.48550/arXiv.2604.18570',
+    journal: 'arXiv',
+    type: 'preprint',
+  },
+];
 
 async function getJson(url, headers = {}) {
   const res = await fetch(url, {
@@ -57,7 +67,7 @@ function doiFromWork(work) {
 
 function normalizeWorks(grouped) {
   const groups = grouped?.group || [];
-  return groups.map((group) => {
+  const works = groups.map((group) => {
     const summary = group?.['work-summary']?.[0] || {};
     const year = summary?.['publication-date']?.year?.value || '';
     const doi = doiFromWork(summary);
@@ -69,9 +79,18 @@ function normalizeWorks(grouped) {
       journal: summary?.['journal-title']?.value || '',
       type: summary?.type || '',
     };
-  }).filter((work) => work.title && work.title !== 'Untitled work')
+  }).filter((work) => work.title && work.title !== 'Untitled work');
+
+  const seen = new Set();
+  return [...manualPublications, ...works]
+    .filter((work) => {
+      const key = String(work.doi || work.url || work.title).toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
     .sort((a, b) => String(b.year).localeCompare(String(a.year)))
-    .slice(0, 8);
+    .slice(0, 9);
 }
 
 async function main() {
