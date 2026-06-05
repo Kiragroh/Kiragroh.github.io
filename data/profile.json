@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T07:11:32.177Z",
+  "generatedAt": "2026-06-05T05:23:20.053Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -115,14 +115,6 @@
     }
   ],
   "publications": [
-    {
-      "title": "A multimodal and temporal foundation model for virtual patient representations at healthcare system scale",
-      "year": "2026",
-      "doi": "10.48550/arXiv.2604.18570",
-      "url": "https://doi.org/10.48550/arXiv.2604.18570",
-      "journal": "arXiv",
-      "type": "preprint"
-    },
     {
       "title": "Balancing barriers: Family, career, and gender equality in radiation oncology and radiation research—An interdisciplinary prospective survey among the young workforce",
       "year": "2026",
