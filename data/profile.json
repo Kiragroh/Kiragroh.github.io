@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T05:23:53.344Z",
+  "generatedAt": "2026-07-04T05:23:35.035Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -20,7 +20,7 @@
   "metrics": {
     "publicRepositories": 32,
     "selectedRepositories": 9,
-    "orcidWorks": 27
+    "orcidWorks": 28
   },
   "repositories": [
     {
@@ -116,6 +116,14 @@
   ],
   "publications": [
     {
+      "title": "Effects of intrafractional motion on targeting accuracy in frameless single-isocenter multi-target stereotactic radiosurgery",
+      "year": "2026",
+      "doi": "10.1007/s00066-026-02565-6",
+      "url": "https://doi.org/10.1007/s00066-026-02565-6",
+      "journal": "Strahlentherapie und Onkologie",
+      "type": "journal-article"
+    },
+    {
       "title": "Balancing barriers: Family, career, and gender equality in radiation oncology and radiation research—An interdisciplinary prospective survey among the young workforce",
       "year": "2026",
       "doi": "10.1007/s00066-025-02402-2",
@@ -169,14 +177,6 @@
       "doi": "10.1007/s00066-025-02403-1",
       "url": "https://doi.org/10.1007/s00066-025-02403-1",
       "journal": "Strahlentherapie und Onkologie",
-      "type": "journal-article"
-    },
-    {
-      "title": "Pulmonary Stereotactic Body Radiotherapy of Oligometastatic Head-and-Neck Squamous Cell Carcinoma - A multicenter retrospective study",
-      "year": "2025",
-      "doi": "10.1016/j.ijrobp.2024.12.015",
-      "url": "https://doi.org/10.1016/j.ijrobp.2024.12.015",
-      "journal": "International Journal of Radiation Oncology*Biology*Physics",
       "type": "journal-article"
     }
   ]
