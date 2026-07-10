@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T05:23:59.969Z",
+  "generatedAt": "2026-07-10T05:23:10.733Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -20,7 +20,7 @@
   "metrics": {
     "publicRepositories": 32,
     "selectedRepositories": 9,
-    "orcidWorks": 28
+    "orcidWorks": 29
   },
   "repositories": [
     {
@@ -124,6 +124,14 @@
       "type": "journal-article"
     },
     {
+      "title": "Electrical storm treated with radiation therapy in a patient with ischaemic cardiomyopathy and left ventricular thrombus: a case report",
+      "year": "2026",
+      "doi": "10.1093/ehjcr/ytag414",
+      "url": "https://doi.org/10.1093/ehjcr/ytag414",
+      "journal": "European Heart Journal - Case Reports",
+      "type": "journal-article"
+    },
+    {
       "title": "Balancing barriers: Family, career, and gender equality in radiation oncology and radiation research—An interdisciplinary prospective survey among the young workforce",
       "year": "2026",
       "doi": "10.1007/s00066-025-02402-2",
@@ -168,14 +176,6 @@
       "year": "2025",
       "doi": "10.1007/s00066-025-02408-w",
       "url": "https://doi.org/10.1007/s00066-025-02408-w",
-      "journal": "Strahlentherapie und Onkologie",
-      "type": "journal-article"
-    },
-    {
-      "title": "Contouring in transition: perceptions of AI-based autocontouring by radiation oncologists and medical physicists in German-speaking countries",
-      "year": "2025",
-      "doi": "10.1007/s00066-025-02403-1",
-      "url": "https://doi.org/10.1007/s00066-025-02403-1",
       "journal": "Strahlentherapie und Onkologie",
       "type": "journal-article"
     }
