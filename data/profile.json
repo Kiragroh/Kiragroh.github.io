@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T05:23:09.933Z",
+  "generatedAt": "2026-07-16T05:23:24.468Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -94,6 +94,16 @@
       "topics": []
     },
     {
+      "name": "Split-MultiFrame-DICOM",
+      "url": "https://github.com/Kiragroh/Split-MultiFrame-DICOM",
+      "description": "Split Enhanced Multi-Frame DICOM files into single-frame DICOMs. Simple Python script for Varian Eclipse TPS (≤v18) users. No Java/dcm4che required.",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "updated": "2026-04-14T20:13:32Z",
+      "topics": []
+    },
+    {
       "name": "ESAPI_SRS-MultiMets-localMetrics",
       "url": "https://github.com/Kiragroh/ESAPI_SRS-MultiMets-localMetrics",
       "description": "Simplified version of a ESAPI script to calculate local plan quality metrics for SRS cases with multiple lesions",
@@ -101,16 +111,6 @@
       "stars": 5,
       "forks": 1,
       "updated": "2026-06-04T07:33:56Z",
-      "topics": []
-    },
-    {
-      "name": "Split-MultiFrame-DICOM",
-      "url": "https://github.com/Kiragroh/Split-MultiFrame-DICOM",
-      "description": "Split Enhanced Multi-Frame DICOM files into single-frame DICOMs. Simple Python script for Varian Eclipse TPS (≤v18) users. No Java/dcm4che required.",
-      "language": "Python",
-      "stars": 5,
-      "forks": 1,
-      "updated": "2026-04-14T20:13:32Z",
       "topics": []
     }
   ],
