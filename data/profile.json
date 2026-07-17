@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T05:23:24.468Z",
+  "generatedAt": "2026-07-17T05:23:36.712Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -54,6 +54,16 @@
       "topics": []
     },
     {
+      "name": "ESAPI_Beam-Namer",
+      "url": "https://github.com/Kiragroh/ESAPI_Beam-Namer",
+      "description": "BinaryPlugin_Simply change your Beam/Field IDs with the nomenclature of your choice.",
+      "language": "C#",
+      "stars": 8,
+      "forks": 1,
+      "updated": "2026-06-04T07:33:23Z",
+      "topics": []
+    },
+    {
       "name": "Kira_DICOM-RT-Anonymizer-MG",
       "url": "https://github.com/Kiragroh/Kira_DICOM-RT-Anonymizer-MG",
       "description": "Anonymize DICOM-RT files with ease. UIDs are also anonymized but without losing RT connections.",
@@ -61,16 +71,6 @@
       "stars": 8,
       "forks": 0,
       "updated": "2022-04-09T07:39:33Z",
-      "topics": []
-    },
-    {
-      "name": "ESAPI_Beam-Namer",
-      "url": "https://github.com/Kiragroh/ESAPI_Beam-Namer",
-      "description": "BinaryPlugin_Simply change your Beam/Field IDs with the nomenclature of your choice.",
-      "language": "C#",
-      "stars": 7,
-      "forks": 1,
-      "updated": "2026-06-04T07:33:23Z",
       "topics": []
     },
     {
