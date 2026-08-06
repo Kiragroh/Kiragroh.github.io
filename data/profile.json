@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T05:23:47.252Z",
+  "generatedAt": "2026-08-06T05:23:58.911Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -24,6 +24,16 @@
   },
   "repositories": [
     {
+      "name": "DICOM-RT-Station",
+      "url": "https://github.com/Kiragroh/DICOM-RT-Station",
+      "description": "A comprehensive DICOM RT (Radiation Therapy) plan management application with graphical user interface. This software enables receiving, organizing, and selectively forwarding DICOM RT plans to various DICOM nodes with automated rule-based forwarding capabilities.",
+      "language": "Python",
+      "stars": 9,
+      "forks": 2,
+      "updated": "2026-03-09T06:18:57Z",
+      "topics": []
+    },
+    {
       "name": "ESAPI_Showcase_ComplexScripts",
       "url": "https://github.com/Kiragroh/ESAPI_Showcase_ComplexScripts",
       "description": "Screenshots of my often used complex ESAPI-GUI-Scripts. These screenshots should inspire you for your own projects.",
@@ -31,16 +41,6 @@
       "stars": 9,
       "forks": 1,
       "updated": "2026-06-27T05:37:02Z",
-      "topics": []
-    },
-    {
-      "name": "DICOM-RT-Station",
-      "url": "https://github.com/Kiragroh/DICOM-RT-Station",
-      "description": "A comprehensive DICOM RT (Radiation Therapy) plan management application with graphical user interface. This software enables receiving, organizing, and selectively forwarding DICOM RT plans to various DICOM nodes with automated rule-based forwarding capabilities.",
-      "language": "Python",
-      "stars": 8,
-      "forks": 2,
-      "updated": "2026-03-09T06:18:57Z",
       "topics": []
     },
     {
@@ -104,14 +104,21 @@
       "topics": []
     },
     {
-      "name": "ESAPI_SRS-MultiMets-localMetrics",
-      "url": "https://github.com/Kiragroh/ESAPI_SRS-MultiMets-localMetrics",
-      "description": "Simplified version of a ESAPI script to calculate local plan quality metrics for SRS cases with multiple lesions",
+      "name": "ClearPlan-OpenSource",
+      "url": "https://github.com/Kiragroh/ClearPlan-OpenSource",
+      "description": "Open-source framework for automated radiotherapy plan review with PQM evaluation, DVH visualization, and failure-mode logging.",
       "language": "C#",
-      "stars": 5,
-      "forks": 1,
-      "updated": "2026-06-04T07:33:56Z",
-      "topics": []
+      "stars": 6,
+      "forks": 0,
+      "updated": "2026-07-30T16:15:01Z",
+      "topics": [
+        "clearplan",
+        "dvh",
+        "esapi",
+        "medical-physics",
+        "quality-assurance",
+        "radiation-therapy"
+      ]
     }
   ],
   "publications": [
