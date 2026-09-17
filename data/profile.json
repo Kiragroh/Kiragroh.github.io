@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T05:23:58.188Z",
+  "generatedAt": "2026-09-17T05:23:20.489Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -74,6 +74,23 @@
       "topics": []
     },
     {
+      "name": "ClearPlan-OpenSource",
+      "url": "https://github.com/Kiragroh/ClearPlan-OpenSource",
+      "description": "Open-source framework for automated radiotherapy plan review with PQM evaluation, DVH visualization, and failure-mode logging.",
+      "language": "C#",
+      "stars": 7,
+      "forks": 0,
+      "updated": "2026-09-16T08:16:57Z",
+      "topics": [
+        "clearplan",
+        "dvh",
+        "esapi",
+        "medical-physics",
+        "quality-assurance",
+        "radiation-therapy"
+      ]
+    },
+    {
       "name": "Akki_Custom-Varian-Importer",
       "url": "https://github.com/Kiragroh/Akki_Custom-Varian-Importer",
       "description": "Import Dicom files from many patients at once without even opening Eclipse.",
@@ -102,23 +119,6 @@
       "forks": 1,
       "updated": "2026-04-14T20:13:32Z",
       "topics": []
-    },
-    {
-      "name": "ClearPlan-OpenSource",
-      "url": "https://github.com/Kiragroh/ClearPlan-OpenSource",
-      "description": "Open-source framework for automated radiotherapy plan review with PQM evaluation, DVH visualization, and failure-mode logging.",
-      "language": "C#",
-      "stars": 6,
-      "forks": 0,
-      "updated": "2026-09-15T22:34:30Z",
-      "topics": [
-        "clearplan",
-        "dvh",
-        "esapi",
-        "medical-physics",
-        "quality-assurance",
-        "radiation-therapy"
-      ]
     }
   ],
   "publications": [
