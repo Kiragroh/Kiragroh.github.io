@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T05:23:46.098Z",
+  "generatedAt": "2026-10-06T05:23:13.866Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -74,6 +74,16 @@
       "topics": []
     },
     {
+      "name": "Split-MultiFrame-DICOM",
+      "url": "https://github.com/Kiragroh/Split-MultiFrame-DICOM",
+      "description": "Split Enhanced Multi-Frame DICOM files into single-frame DICOMs. Simple Python script for Varian Eclipse TPS (≤v18) users. No Java/dcm4che required.",
+      "language": "Python",
+      "stars": 7,
+      "forks": 1,
+      "updated": "2026-04-14T20:13:32Z",
+      "topics": []
+    },
+    {
       "name": "ClearPlan-OpenSource",
       "url": "https://github.com/Kiragroh/ClearPlan-OpenSource",
       "description": "Open-source framework for automated radiotherapy plan review with PQM evaluation, DVH visualization, and failure-mode logging.",
@@ -108,16 +118,6 @@
       "stars": 7,
       "forks": 0,
       "updated": "2026-08-13T07:04:51Z",
-      "topics": []
-    },
-    {
-      "name": "ESAPI_DataMiner_PortalDosimetry",
-      "url": "https://github.com/Kiragroh/ESAPI_DataMiner_PortalDosimetry",
-      "description": "Standalone-Console-App_Mine all analysed PortalDosimetry Fields and make custom evaluations too",
-      "language": "C#",
-      "stars": 6,
-      "forks": 1,
-      "updated": "2026-06-04T07:33:38Z",
       "topics": []
     }
   ],
