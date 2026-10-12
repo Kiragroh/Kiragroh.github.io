@@ -1,0 +1,236 @@
+{
+  "updated": "2026-10-12",
+  "title": "My ESAPI & ARIA toolbox",
+  "author": "Maximilian Grohmann",
+  "url": "https://kiragroh.github.io/esapi/",
+  "repositories": [
+    {
+      "repo": "Kiragroh/ESAPI-Runner-Hub",
+      "title": "ESAPI Runner Hub",
+      "category": "Launch & develop",
+      "why": "A shared catalogue, reusable context and isolated launches for ESAPI tools. Start here for the Citrix workflow in my talk.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ESAPI-Runner-Hub"
+    },
+    {
+      "repo": "Kiragroh/ESAPI_Showcase_ComplexScripts",
+      "title": "ESAPI Showcase + coding skill",
+      "category": "Launch & develop",
+      "why": "Screenshots and workflow ideas, plus a shareable ESAPI skill for coding assistants.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ESAPI_Showcase_ComplexScripts"
+    },
+    {
+      "repo": "Kiragroh/ESAPI_SingleFilePlugins",
+      "title": "Single-file plug-ins",
+      "category": "Launch & develop",
+      "why": "Small, focused examples to inspect, adapt and understand before building a larger application.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ESAPI_SingleFilePlugins"
+    },
+    {
+      "repo": "Kiragroh/ClearPlan-OpenSource",
+      "title": "ClearPlan OpenSource",
+      "category": "Review & quality",
+      "why": "A reusable read-only plan-review framework. Bring your own commissioned rules and local requirements.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ClearPlan-OpenSource"
+    },
+    {
+      "repo": "Kiragroh/ARIA-API_CustomerRepo",
+      "title": "ARIA API CustomerRepo",
+      "category": "ARIA & interfaces",
+      "why": "Installation experience, FHIR profiles and dry-run examples for documents and workflow tasks.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ARIA-API_CustomerRepo"
+    },
+    {
+      "repo": "Kiragroh/ESAPI_DICOMrt-Mining",
+      "title": "ESAPI DICOMrt-Mining",
+      "category": "Data & DICOM",
+      "why": "Use ESAPI to find linked DICOM UIDs, then transfer the objects through the ARIA DICOM daemon.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ESAPI_DICOMrt-Mining"
+    },
+    {
+      "repo": "Kiragroh/ESAPI_Beam-Namer",
+      "title": "Beam Namer",
+      "category": "Planning & structures",
+      "why": "A compact example of turning a local naming convention into a repeatable tool.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ESAPI_Beam-Namer"
+    },
+    {
+      "repo": "Kiragroh/ESAPI_DataMiner_PortalDosimetry",
+      "title": "Portal Dosimetry Data Miner",
+      "category": "Data & DICOM",
+      "why": "Mine analysed portal-dosimetry fields and build custom evaluations.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/ESAPI_DataMiner_PortalDosimetry"
+    },
+    {
+      "repo": "redcurry/EsapiEssentials",
+      "title": "ESAPI Essentials · Carlos J. Anderson",
+      "category": "Launch & develop",
+      "why": "Reusable ESAPI conveniences and plug-in-runner patterns. An important part of the community history behind this talk.",
+      "origin": "talk",
+      "url": "https://github.com/redcurry/EsapiEssentials"
+    },
+    {
+      "repo": "LDClark/PlanCheck",
+      "title": "PlanCheck",
+      "category": "Review & quality",
+      "why": "A community plan-check example covering DVH metrics, potential collisions and plan, structure and dose parameters.",
+      "origin": "starred",
+      "url": "https://github.com/LDClark/PlanCheck"
+    },
+    {
+      "repo": "Varian-MedicalAffairsAppliedSolutions/MAAS-PlanScoreCard",
+      "title": "MAAS PlanScoreCard",
+      "category": "Review & quality",
+      "why": "Define scorecards and compare plan quality. One of the examples I have shared in earlier scripting talks.",
+      "origin": "talk",
+      "url": "https://github.com/Varian-MedicalAffairsAppliedSolutions/MAAS-PlanScoreCard"
+    },
+    {
+      "repo": "Varian-MedicalAffairsAppliedSolutions/MAAS-UncertaintyClinicalGoals",
+      "title": "MAAS Uncertainty Clinical Goals",
+      "category": "Review & quality",
+      "why": "Evaluate clinical goals across a plan’s uncertainty scenarios.",
+      "origin": "talk",
+      "url": "https://github.com/Varian-MedicalAffairsAppliedSolutions/MAAS-UncertaintyClinicalGoals"
+    },
+    {
+      "repo": "Varian-MedicalAffairsAppliedSolutions/MAAS-PlanComplexity",
+      "title": "MAAS Plan Complexity",
+      "category": "Review & quality",
+      "why": "Quantify beam-modulation complexity using metrics described in the scientific literature.",
+      "origin": "talk",
+      "url": "https://github.com/Varian-MedicalAffairsAppliedSolutions/MAAS-PlanComplexity"
+    },
+    {
+      "repo": "GatewayScripts/SimpleStructureBuilder",
+      "title": "SimpleStructureBuilder",
+      "category": "Planning & structures",
+      "why": "Build derived structures through a sequence of structure operations.",
+      "origin": "talk",
+      "url": "https://github.com/GatewayScripts/SimpleStructureBuilder"
+    },
+    {
+      "repo": "brjdenis/VarianESAPI_PlanSum2Plan",
+      "title": "PlanSum2Plan",
+      "category": "Planning & structures",
+      "why": "Convert a PlanSum into a verification plan, for example as a possible base-dose input. Check the original assumptions carefully.",
+      "origin": "talk",
+      "url": "https://github.com/brjdenis/VarianESAPI_PlanSum2Plan"
+    },
+    {
+      "repo": "x2sky/Esapi_BatchOptimization",
+      "title": "ESAPI Batch Optimization",
+      "category": "Planning & structures",
+      "why": "Explore batch optimisation and dose-calculation workflows in Eclipse.",
+      "origin": "talk",
+      "url": "https://github.com/x2sky/Esapi_BatchOptimization"
+    },
+    {
+      "repo": "LDClark/PDFtoAria",
+      "title": "PDFtoAria",
+      "category": "ARIA & interfaces",
+      "why": "A UI for importing PDFs into ARIA using Oncology Services and ESAPI. A useful example of the handoff after a script finishes.",
+      "origin": "talk",
+      "url": "https://github.com/LDClark/PDFtoAria"
+    },
+    {
+      "repo": "tkmd94/EclipseDataMiner",
+      "title": "EclipseDataMiner",
+      "category": "Data & DICOM",
+      "why": "A community starting point for learning how Eclipse data-mining tools are structured.",
+      "origin": "starred",
+      "url": "https://github.com/tkmd94/EclipseDataMiner"
+    },
+    {
+      "repo": "mediphysicist/TpsConnector",
+      "title": "TPS Connector",
+      "category": "ARIA & interfaces",
+      "why": "Connecting TPS context with external RT tools. Included in my earlier collection of community examples.",
+      "origin": "talk",
+      "url": "https://github.com/mediphysicist/TpsConnector"
+    },
+    {
+      "repo": "Gateway-Scripts/FluenceFrame",
+      "title": "FluenceFrame",
+      "category": "Planning & structures",
+      "why": "An inventive demonstration that converts photos into fluence maps. Useful inspiration for what scripting makes possible.",
+      "origin": "talk",
+      "url": "https://github.com/Gateway-Scripts/FluenceFrame"
+    },
+    {
+      "repo": "nikolaj-jensen/PlanCheck_article",
+      "title": "PlanCheck · published implementation",
+      "category": "Review & quality",
+      "why": "The software version associated with the published automated physics quality-control review study.",
+      "origin": "starred",
+      "url": "https://github.com/nikolaj-jensen/PlanCheck_article"
+    },
+    {
+      "repo": "bcatt09/NTCP-Calculator",
+      "title": "NTCP Calculator",
+      "category": "Review & quality",
+      "why": "An example from my older talk collection for exploring plan-based normal-tissue complication models.",
+      "origin": "talk",
+      "url": "https://github.com/bcatt09/NTCP-Calculator"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Varian code samples",
+      "description": "Official examples and worked starting points.",
+      "url": "https://github.com/VarianAPIs/Varian-Code-Samples"
+    },
+    {
+      "title": "Varian developer documentation",
+      "description": "Use the documentation for your installed release.",
+      "url": "https://docs.developer.varian.com/"
+    },
+    {
+      "title": "Varian API Book",
+      "description": "Background, examples and interface concepts.",
+      "url": "https://varianapis.github.io/VarianApiBook.pdf"
+    },
+    {
+      "title": "Medical Affairs community catalogue",
+      "description": "Community-developed tools and the original terms of use.",
+      "url": "https://medicalaffairs.varian.com/esapi-projects"
+    },
+    {
+      "title": "Medical Affairs Applied Solutions",
+      "description": "The organisation behind the MAAS repositories.",
+      "url": "https://github.com/Varian-MedicalAffairsAppliedSolutions"
+    },
+    {
+      "title": "Gateway Scripts",
+      "description": "Code, courses and practical scripting material.",
+      "url": "https://www.gatewayscripts.com/code"
+    },
+    {
+      "title": "Carlos J. Anderson",
+      "description": "Original introduction to ESAPI Essentials, published in 2019.",
+      "url": "https://www.carlosjanderson.com/post/introducing-esapi-essentials"
+    },
+    {
+      "title": "João Castelo’s blog",
+      "description": "A source carried forward from my earlier ESAPI talks.",
+      "url": "https://medium.com/@jhmcastelo"
+    },
+    {
+      "title": "ESAPI community on Reddit",
+      "description": "Questions, experience and discussions from other users.",
+      "url": "https://www.reddit.com/r/esapi/"
+    },
+    {
+      "title": "Shareable ESAPI coding skill",
+      "description": "Project-aware guidance for assistants; local references and a build toolchain are still required.",
+      "url": "https://github.com/Kiragroh/ESAPI_Showcase_ComplexScripts/blob/master/skills/esapi-scripting/SKILL.md"
+    }
+  ]
+}
