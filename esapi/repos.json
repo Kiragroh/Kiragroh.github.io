@@ -5,6 +5,14 @@
   "url": "https://kiragroh.github.io/esapi/",
   "repositories": [
     {
+      "repo": "Kiragroh/PAM-BAM",
+      "title": "PAM / BAM",
+      "category": "Review & quality",
+      "why": "Plan and beam aperture modulation: a geometric metric, with implementations for Eclipse ESAPI and RayStation.",
+      "origin": "own",
+      "url": "https://github.com/Kiragroh/PAM-BAM"
+    },
+    {
       "repo": "Kiragroh/ESAPI-Runner-Hub",
       "title": "ESAPI Runner Hub",
       "category": "Launch & develop",
@@ -228,9 +236,9 @@
       "url": "https://www.reddit.com/r/esapi/"
     },
     {
-      "title": "Shareable ESAPI coding skill",
-      "description": "Project-aware guidance for assistants; local references and a build toolchain are still required.",
-      "url": "https://github.com/Kiragroh/ESAPI_Showcase_ComplexScripts/blob/master/skills/esapi-scripting/SKILL.md"
+      "title": "PAM: original publication",
+      "description": "Hernandez and colleagues: the geometric plan aperture modulation metric.",
+      "url": "https://doi.org/10.1002/mp.70144"
     }
   ]
 }
