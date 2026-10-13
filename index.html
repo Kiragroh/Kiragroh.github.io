@@ -35,8 +35,8 @@
     }
     a { color: inherit; text-decoration: none; } a:hover { color: var(--text); }
     body > header, body > main, body > footer { position:relative; z-index:1; }
-    .fixed-silhouette { position:fixed; right:0; bottom:0; z-index:0; width:min(33vw,420px); height:min(86vh,820px); display:flex; align-items:flex-end; justify-content:flex-end; overflow:hidden; pointer-events:none; opacity:.26; mix-blend-mode:screen; }
-    .fixed-silhouette img { height:100%; width:auto; max-width:none; object-fit:contain; object-position:right bottom; transform:translateX(10%); filter:saturate(.85) contrast(1.08) drop-shadow(-32px 0 78px rgba(85,214,255,.16)); }
+    .fixed-silhouette { position:fixed; right:0; bottom:0; z-index:0; width:min(33vw,420px); height:min(86vh,820px); display:flex; align-items:flex-end; justify-content:flex-end; overflow:hidden; pointer-events:none; opacity:.42; }
+    .fixed-silhouette img { height:100%; width:auto; max-width:none; object-fit:contain; object-position:right bottom; transform:translateX(10%); filter:grayscale(1) sepia(.4) hue-rotate(155deg) saturate(1.8); }
     .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
     header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px); background: rgba(8,9,10,.74); border-bottom: 1px solid var(--border-soft); }
     nav { min-height: 68px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
@@ -86,7 +86,7 @@
   </style>
 </head>
 <body>
-  <div class="fixed-silhouette" aria-hidden="true"><img src="assets/max-silhouette-alpha.webp" alt="" width="639" height="960"></div>
+  <div class="fixed-silhouette" aria-hidden="true"><img src="assets/max-hoodie-profile-20261013.png" alt="" width="1024" height="1536"></div>
   <header>
     <div class="container"><nav aria-label="Main navigation"><a class="brand" href="#top" aria-label="Maximilian Grohmann home"><span class="mark">MG</span><span>Maximilian Grohmann</span></a><div class="navlinks"><a href="#focus">Focus</a><a href="#interoperability">Interop</a><a href="#cv">CV</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="poster.html">Poster</a><a href="esapi/">ESAPI toolbox</a><a href="#contact">Links</a><button id="langToggle" class="lang-toggle" type="button" aria-label="Sprache auf Deutsch umschalten">DE</button></div></nav></div>
   </header>
