@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T09:12:10.415Z",
+  "generatedAt": "2026-10-30T09:20:58.093Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -21,7 +21,7 @@
   "metrics": {
     "publicRepositories": 49,
     "selectedRepositories": 6,
-    "orcidWorks": 29
+    "orcidWorks": 30
   },
   "repositories": [
     {
@@ -63,10 +63,10 @@
     {
       "name": "offline-backup-guard",
       "url": "https://github.com/Kiragroh/offline-backup-guard",
-      "description": "Windows desktop backup app with setup wizard, system tray, health dashboard and USB offline-backup scheduling. Canary checks, file version retention and BCM reporting.",
+      "description": "Windows desktop and tray app for scheduled USB backups, offline disk protection, file versions and actionable health reports.",
       "language": "PowerShell",
       "stars": 0,
-      "updated": "2026-10-13T09:53:55Z",
+      "updated": "2026-10-30T09:18:59Z",
       "topics": [
         "backup",
         "business-continuity",
@@ -187,6 +187,15 @@
   ],
   "publications": [
     {
+      "title": "Sex- and gender-related aspects of patient safety in radiation oncology: a scoping review",
+      "year": "2026",
+      "date": "2026-10-27",
+      "doi": "10.3389/fonc.2026.1962214",
+      "url": "https://doi.org/10.3389/fonc.2026.1962214",
+      "journal": "Frontiers in Oncology",
+      "type": "journal-article"
+    },
+    {
       "title": "Effects of intrafractional motion on targeting accuracy in frameless single-isocenter multi-target stereotactic radiosurgery",
       "year": "2026",
       "date": "2026-07-03",
@@ -246,15 +255,6 @@
       "date": "2025-07-10",
       "doi": "10.1007/s00066-025-02424-w",
       "url": "https://doi.org/10.1007/s00066-025-02424-w",
-      "journal": "Strahlentherapie und Onkologie",
-      "type": "journal-article"
-    },
-    {
-      "title": "Implementing total skin electron irradiation in radiotherapy: a structured change management approach",
-      "year": "2025",
-      "date": "2025-05-14",
-      "doi": "10.1007/s00066-025-02408-w",
-      "url": "https://doi.org/10.1007/s00066-025-02408-w",
       "journal": "Strahlentherapie und Onkologie",
       "type": "journal-article"
     }
