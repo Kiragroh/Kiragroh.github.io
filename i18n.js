@@ -1,5 +1,18 @@
 (() => {
   const enToDe = {
+    "Explore projects": "Projekte entdecken",
+    "Pinned projects": "Gepinnte Projekte",
+    "Pinned on GitHub": "Auf GitHub gepinnt",
+    "View repository": "Repository ansehen",
+    "The projects currently pinned on my GitHub profile — from DICOM tools and SRS analysis to everyday automation.": "Die aktuell auf meinem GitHub-Profil gepinnten Projekte — von DICOM-Tools und SRS-Analysen bis zur Automatisierung im Alltag.",
+    "More ARIA & ESAPI tools": "Weitere ARIA- & ESAPI-Tools",
+    "Smaller tools, scripts and examples from clinical workflows. Expand a category to explore.": "Weitere Werkzeuge, Skripte und Beispiele aus klinischen Abläufen. Kategorie aufklappen und entdecken.",
+    "ARIA · interfaces & data": "ARIA · Schnittstellen & Daten",
+    "ESAPI · planning & quality": "ESAPI · Planung & Qualität",
+    "Explore the full ESAPI toolbox": "Zur vollständigen ESAPI-Toolbox",
+    "pinned projects": "gepinnte Projekte",
+    "Last synced · GitHub & ORCID": "Letzter Abgleich · GitHub & ORCID",
+    "Full publication list on ORCID": "Alle Publikationen auf ORCID",
     'Focus': 'Fokus',
     'Projects': 'Projekte',
     'Publications': 'Publikationen',

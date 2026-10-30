@@ -1,121 +1,78 @@
 #!/usr/bin/env node
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { pinnedNamesFromHtml, selectPinned, normalizeRepo, normalizeWorks } from './profile-data.mjs';
+import { renderRepos, renderScripts, renderPublications } from '../profile-view.mjs';
 
 const GITHUB_USER = 'Kiragroh';
 const ORCID = '0000-0002-6909-811X';
 const root = new URL('..', import.meta.url);
-const outFile = new URL('data/profile.json', root);
 
-async function getJson(url, headers = {}) {
-  const res = await fetch(url, {
-    headers: {
-      'User-Agent': 'Kiragroh.github.io profile updater',
-      'Accept': 'application/json',
-      ...headers,
-    },
+async function get(url, accept = 'application/json') {
+  const response = await fetch(url, {
+    headers: { 'User-Agent': 'Kiragroh.github.io profile updater', Accept: accept },
+    signal: AbortSignal.timeout(30000),
   });
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}: ${url}`);
-  return res.json();
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${url}`);
+  return accept === 'application/json' ? response.json() : response.text();
 }
 
-function repoScore(repo) {
-  const text = `${repo.name} ${repo.description || ''}`.toLowerCase();
-  const domainBoost = [
-    'dicom', 'radiotherapy', 'rt-', 'rt_', 'esapi', 'monai', 'dose', 'medical',
-    'clinical', 'srs', 'segmentation', 'patient', 'clearplan', 'aria', 'imaging'
-  ].some((word) => text.includes(word)) ? 100 : 0;
-  return domainBoost + (repo.stargazers_count || 0) * 3 + (repo.forks_count || 0) * 2 + new Date(repo.pushed_at).getTime() / 1e13;
+async function getRepos() {
+  const repos = [];
+  for (let page = 1; ; page++) {
+    const batch = await get(`https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&page=${page}&sort=updated`);
+    repos.push(...batch);
+    if (batch.length < 100) return repos;
+  }
 }
 
-function normalizeRepos(repos) {
-  return repos
-    .filter((repo) => !repo.fork && !repo.archived && repo.name !== `${GITHUB_USER}.github.io`)
-    .sort((a, b) => repoScore(b) - repoScore(a))
-    .slice(0, 9)
-    .map((repo) => ({
-      name: repo.name,
-      url: repo.html_url,
-      description: repo.description || 'Open-source clinical tooling and automation project.',
-      language: repo.language || 'Code',
-      stars: repo.stargazers_count || 0,
-      forks: repo.forks_count || 0,
-      updated: repo.pushed_at,
-      topics: repo.topics || [],
-    }));
-}
+const scriptGroups = [
+  { id: 'aria', title: 'ARIA · interfaces & data', names: ['ARIA-API_CustomerRepo', 'ARIA18-Throughput-Collector', 'ESAPI_DICOMrt-Mining'] },
+  { id: 'esapi', title: 'ESAPI · planning & quality', names: ['ESAPI-Runner-Hub', 'ClearPlan-OpenSource', 'PAM-BAM', 'ESAPI_Beam-Namer', 'ESAPI_SingleFilePlugins', 'ESAPI_DataMiner_PortalDosimetry'] },
+];
 
-function titleCaseFromWork(work) {
-  const title = work?.title?.title?.value || work?.title?.value || 'Untitled work';
-  return String(title).replace(/\s+/g, ' ').trim();
-}
-
-function doiFromWork(work) {
-  const ids = work?.['external-ids']?.['external-id'] || [];
-  const doi = ids.find((id) => String(id?.['external-id-type']).toLowerCase() === 'doi');
-  return doi?.['external-id-value'] || null;
-}
-
-function normalizeWorks(grouped) {
-  const groups = grouped?.group || [];
-  return groups.map((group) => {
-    const summary = group?.['work-summary']?.[0] || {};
-    const year = summary?.['publication-date']?.year?.value || '';
-    const doi = doiFromWork(summary);
-    return {
-      title: titleCaseFromWork(summary),
-      year,
-      doi,
-      url: doi ? `https://doi.org/${doi}` : (summary?.url?.value || `https://orcid.org/${ORCID}`),
-      journal: summary?.['journal-title']?.value || '',
-      type: summary?.type || '',
-    };
-  }).filter((work) => work.title && work.title !== 'Untitled work')
-    .sort((a, b) => String(b.year).localeCompare(String(a.year)))
-    .slice(0, 8);
+function replaceSnapshot(html, id, content) {
+  const start = `<!-- ${id}:start -->`;
+  const end = `<!-- ${id}:end -->`;
+  if (!html.includes(start) || !html.includes(end)) throw new Error(`Missing static snapshot marker: ${id}`);
+  return html.replace(new RegExp(`${start}[\\s\\S]*?${end}`), () => `${start}\n${content}\n${end}`);
 }
 
 async function main() {
-  const generatedAt = new Date().toISOString();
-  const [reposRaw, worksRaw] = await Promise.all([
-    getJson(`https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&sort=updated`),
-    getJson(`https://pub.orcid.org/v3.0/${ORCID}/works`, { Accept: 'application/json' }),
+  const [reposRaw, worksRaw, profileHtml, oldData, originalHtml] = await Promise.all([
+    getRepos(),
+    get(`https://pub.orcid.org/v3.0/${ORCID}/works`),
+    get(`https://github.com/${GITHUB_USER}`, 'text/html'),
+    readFile(new URL('data/profile.json', root), 'utf8').then(JSON.parse),
+    readFile(new URL('index.html', root), 'utf8'),
   ]);
-
+  const repositories = selectPinned(reposRaw, pinnedNamesFromHtml(profileHtml));
+  const scripts = scriptGroups.map(group => ({
+    id: group.id, title: group.title,
+    repositories: group.names.filter(name => !repositories.some(repo => repo.name === name)).map(name => {
+      const repo = reposRaw.find(repo => repo.name === name);
+      if (!repo) throw new Error(`Script repository missing from API response: ${name}`);
+      return normalizeRepo(repo);
+    }),
+  })).filter(group => group.repositories.length);
+  const works = normalizeWorks(worksRaw, ORCID);
+  if (!works.length) throw new Error('ORCID returned no works; keeping the previous snapshot.');
   const data = {
-    generatedAt,
-    profile: {
-      name: 'Maximilian Grohmann',
-      role: 'Medical Informatics Specialist',
-      location: 'Leipzig, Germany',
-      github: `https://github.com/${GITHUB_USER}`,
-      linkedin: 'https://www.linkedin.com/in/maximilian-grohmann-b70588b1',
-      orcid: `https://orcid.org/${ORCID}`,
-      expertise: [
-        'ARIA database SQL queries and reporting',
-        'Digitalization and interface design between departmental, clinical and hospital systems',
-        'HL7, FHIR and web-service integrations',
-        'RayStation TPS scripting',
-        'ESAPI / Eclipse automation',
-        'Clinical networking, port releases, routing and protocol troubleshooting',
-        'DICOM, DICOM-RT, SMB and related clinical communication workflows',
-      ],
-    },
-    metrics: {
-      publicRepositories: reposRaw.filter((repo) => !repo.fork).length,
-      selectedRepositories: normalizeRepos(reposRaw).length,
-      orcidWorks: worksRaw?.group?.length || 0,
-    },
-    repositories: normalizeRepos(reposRaw),
-    publications: normalizeWorks(worksRaw),
+    generatedAt: new Date().toISOString(),
+    profile: { ...oldData.profile, avatar: 'assets/github-avatar.png' },
+    metrics: { publicRepositories: reposRaw.filter(repo => !repo.fork).length, selectedRepositories: repositories.length, orcidWorks: worksRaw.group.length },
+    repositories, scripts, publications: works.slice(0, 8),
   };
-
+  let html = replaceSnapshot(originalHtml, 'pinned-repos', renderRepos(repositories));
+  html = replaceSnapshot(html, 'script-groups', renderScripts(scripts));
+  html = replaceSnapshot(html, 'publications', renderPublications(data.publications));
+  html = html.replace(/(<b id="repoCount">)[^<]*/, `$1${data.metrics.publicRepositories}`)
+    .replace(/(<b id="selectedCount">)[^<]*/, `$1${repositories.length}`)
+    .replace(/(<b id="updatedAt">)[^<]*/, `$1${data.generatedAt.slice(0, 10)}`);
   await mkdir(new URL('data/', root), { recursive: true });
-  await writeFile(outFile, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
-  console.log(`Updated ${outFile.pathname}`);
-  console.log(`Repos: ${data.repositories.length}; publications: ${data.publications.length}; generatedAt: ${generatedAt}`);
+  await writeFile(new URL('data/profile.json', root), `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+  await writeFile(new URL('index.html', root), html, 'utf8');
+  console.log(`Updated ${repositories.length} pins, ${scripts.reduce((sum, group) => sum + group.repositories.length, 0)} scripts and ${data.publications.length} publications (${worksRaw.group.length} ORCID groups).`);
+  console.log(`Pins: ${repositories.map(repo => repo.name).join(', ')}`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+main().catch(error => { console.error(error); process.exitCode = 1; });
