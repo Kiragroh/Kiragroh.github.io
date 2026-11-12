@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T05:23:44.478Z",
+  "generatedAt": "2026-11-12T05:23:03.154Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -21,7 +21,7 @@
   "metrics": {
     "publicRepositories": 50,
     "selectedRepositories": 6,
-    "orcidWorks": 30
+    "orcidWorks": 31
   },
   "repositories": [
     {
@@ -187,6 +187,15 @@
   ],
   "publications": [
     {
+      "title": "“They’ll do the right thing”: Patient perceptions of safety and patient-centered care in radiation oncology – a qualitative interview study",
+      "year": "2026",
+      "date": "2026-11",
+      "doi": "10.1016/j.tipsro.2026.100453",
+      "url": "https://doi.org/10.1016/j.tipsro.2026.100453",
+      "journal": "Technical Innovations &amp; Patient Support in Radiation Oncology",
+      "type": "journal-article"
+    },
+    {
       "title": "Sex- and gender-related aspects of patient safety in radiation oncology: a scoping review",
       "year": "2026",
       "date": "2026-10-27",
@@ -246,15 +255,6 @@
       "date": "2025-07-24",
       "doi": "10.1007/s00066-025-02444-6",
       "url": "https://doi.org/10.1007/s00066-025-02444-6",
-      "journal": "Strahlentherapie und Onkologie",
-      "type": "journal-article"
-    },
-    {
-      "title": "Multicenter multiplatform pattern-of-practice analysis of single-isocenter multitarget stereotactic radiosurgery",
-      "year": "2025",
-      "date": "2025-07-10",
-      "doi": "10.1007/s00066-025-02424-w",
-      "url": "https://doi.org/10.1007/s00066-025-02424-w",
       "journal": "Strahlentherapie und Onkologie",
       "type": "journal-article"
     }
