@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T05:23:13.547Z",
+  "generatedAt": "2026-11-17T05:23:34.143Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -30,7 +30,7 @@
       "description": "Fast Windows QuickLook preview for DICOM images and radiotherapy: MPR, RT structures, dose, MLC, DVH, 3D, registration and full tag search.",
       "language": "C#",
       "stars": 3,
-      "updated": "2026-11-15T13:53:09Z",
+      "updated": "2026-11-16T09:45:58Z",
       "topics": []
     },
     {
