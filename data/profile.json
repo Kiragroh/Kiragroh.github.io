@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T05:23:18.085Z",
+  "generatedAt": "2026-11-23T05:23:34.801Z",
   "profile": {
     "name": "Maximilian Grohmann",
     "role": "Medical Informatics Specialist",
@@ -29,7 +29,7 @@
       "url": "https://github.com/Kiragroh/QuickLook-DicomRT",
       "description": "Fast Windows QuickLook preview for DICOM images and radiotherapy: MPR, RT structures, dose, MLC, DVH, 3D, registration and full tag search.",
       "language": "C#",
-      "stars": 3,
+      "stars": 4,
       "updated": "2026-11-16T09:45:58Z",
       "topics": []
     },
@@ -144,7 +144,7 @@
           "url": "https://github.com/Kiragroh/ClearPlan-OpenSource",
           "description": "Open-source framework for automated radiotherapy plan review with PQM evaluation, DVH visualization, and failure-mode logging.",
           "language": "C#",
-          "stars": 7,
+          "stars": 8,
           "updated": "2026-09-16T08:16:57Z",
           "topics": [
             "clearplan",
